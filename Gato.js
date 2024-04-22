@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 export default function Gato ({idade}) {
     const texto = idade > 1 ? 'anos' : 'ano';
-    const [nome, setNome] = useState("");
+    const [nome, setNome] = useState("Garfield");
 
     return (
         <View> 

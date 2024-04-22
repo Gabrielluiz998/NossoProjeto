@@ -7,7 +7,7 @@ const Cliques = () =>{
         <View>
         <Text>Vezes alimentadas: {cliques}</Text>
             <Button title="Alimentar" onPress = {() => {
-                setCliques(cliques + 1 > 10? 'O GATO MORREU' : cliques);
+            setCliques(cliques + 1 > 10? 'O GATO MORREU' : cliques + 1);
             }}/>
         </View>
     );
