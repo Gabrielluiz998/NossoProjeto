@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Gato from '../Gato';
 import Cliques  from '../Cliques';
+import { Link } from 'expo-router';
 
 export default function App() {
   return (
@@ -10,6 +11,8 @@ export default function App() {
       <Text>Bem-vindo!</Text>
       <Gato idade={1} /> 
       <Cliques/>
+
+        <Link href="/home">Não clique</Link>
     </View>
     
   );
